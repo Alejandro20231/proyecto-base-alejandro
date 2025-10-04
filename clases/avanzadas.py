@@ -13,4 +13,5 @@ class OperacionesAvanzadas:
     
     def raizCuadrada(self):
         return math.sqrt(self.num1)
+    
 # Espacio para que los colaboradores agreguen la raíz cuadrada
