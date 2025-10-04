@@ -1,46 +1,16 @@
-class Operaciones:
+import math
+class OperacionesAvanzadas:
     def __init__(self):
         self.num1 = 0
         self.num2 = 0
-        self.resultado = 0
-        
+
     def leerNumeros(self):
-        while True:
-            try:
-                self.num1 = int(input("Número 1:"))
-                break
-            except Exception:
-                print("Número inválido")
-                continue
-        while True:
-            try:
-                self.num2 = int(input("Número 2:"))
-                break
-            except Exception:
-                print("Número inválido")
-                continue    
+        self.num1 = float(input("Ingrese el número base: "))
+        self.num2 = float(input("Ingrese el exponente: "))
+
+    def elevarPotencia(self):
+        return self.num1 ** self.num2
     
-    def sumar(self):
-        self.resultado = "La suma de " + str(self.num1) + " + " + str(self.num2) + " es igual a " + str(self.num1 + self.num2)
-    
-    def restar(self):
-        self.resultado = "La resta de "+ str(self.num1) + " - " + str(self.num2) + " es igual a " + str(self.num1 - self.num2)
-
-    def multiplicar(self):
-        self.resultado = "La multiplicacion de  "+ str(self.num1) + " * " + str(self.num2) + " es igual a " + str(self.num1 * self.num2)       
-
-    def dividir (self):
-        self.resultado = "La división de "+ str(self.num1) + " / " + str(self.num2) + " es igual a " + str(self.num1 / self.num2)    
-
-    def modulo(self):
-        self.resultado = "El modulo de "+ str(self.num1) + " % " + str(self.num2) + " es igual a " + str(self.num1 % self.num2)    
-
-    def potencia(self):
-        self.resultado = "El numero "+ str(self.num1) + " potenciado a" + str(self.num2) + " es igual a " + str(self.num1 ^ self.num2)    
-            
-
-    def mostrarResultado(self):
-        print(self.resultado)
-        
-        
-        
+    def raizCuadrada(self):
+        return math.sqrt(self.num1)
+# Espacio para que los colaboradores agreguen la raíz cuadrada
